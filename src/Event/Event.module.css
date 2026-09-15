@@ -278,27 +278,29 @@
   flex-wrap: wrap;
 }
 
-.partnerYofit {
-  font-family: var(--font-display, 'Plus Jakarta Sans', sans-serif);
-  font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: 2px;
-  color: #101828;
-  text-transform: uppercase;
-  line-height: 1;
+.yofitLogoImg {
+  height: 34px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+  vertical-align: middle;
+  mix-blend-mode: multiply;
+  display: block;
 }
 
 .partnerX {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: #94A3B8;
   font-weight: 300;
+  line-height: 1;
 }
 
 .cbLogoImg {
-  height: 34px;
+  height: 28px;
   width: auto;
   object-fit: contain;
   vertical-align: middle;
+  display: block;
 }
 
 .subTagline {

@@ -227,7 +227,11 @@ const Event = () => {
             <div className={styles.formTopHeader}>
               <div className={styles.ticketEyebrowBadge}>OFFICIAL EVENT PASS</div>
               <div className={styles.logoRow}>
-                <span className={styles.partnerYofit}>YOFIT</span>
+                <img
+                  src="/Images/yofit_logo.png"
+                  alt="Yofit Hot Studios"
+                  className={styles.yofitLogoImg}
+                />
                 <span className={styles.partnerX}>×</span>
                 <img
                   src="/Images/CB_Logos/logo_new_black.png"
