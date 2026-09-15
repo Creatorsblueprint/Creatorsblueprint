@@ -11,11 +11,11 @@ const SuccessPopup = ({ onClose }) => {
 
         <span className={styles.successBadge}>Registration Confirmed</span>
 
-        <h3 className={styles.title}>Flow & Fortune</h3>
+        <h3 className={styles.title}>Hot &amp; Hustle</h3>
 
         <div className={styles.detailsBlock}>
-          <div>Reshaped Studio, Marina, Dubai</div>
-          <div>Saturday, Sept 5 • 2:00 PM</div>
+          <div>Yofit Studio, Gate Avenue, DIFC</div>
+          <div>Saturday, Sept 26 • 7:00 PM</div>
         </div>
 
         <p className={styles.description}>

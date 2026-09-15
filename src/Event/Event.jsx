@@ -83,8 +83,8 @@ const Event = () => {
           lastName: lastName.trim(),
           email: email.trim(),
           instagram: cleanInsta.trim(),
-          event: 'Flow & Fortune',
-          amount: 75,
+          event: 'Hot & Hustle',
+          amount: 89,
           currency: 'AED',
           successUrl: `${baseUrl}/event?issuccess=true`,
           cancelUrl: `${baseUrl}/event?iscancelled=true`
@@ -95,12 +95,12 @@ const Event = () => {
 
       if (response.ok) {
         if (data.url || data.redirect_url) {
-          setMessage({ text: "Securing your mat... teleporting to checkout! 🚀", type: 'success' });
+          setMessage({ text: "Securing your spot... teleporting to checkout! 🚀", type: 'success' });
           setTimeout(() => {
             window.location.href = data.url || data.redirect_url;
           }, 800);
         } else {
-          setMessage({ text: data.message || "Boom, you're registered! See you on the mat 🎉", type: 'success' });
+          setMessage({ text: data.message || "Boom, you're registered! See you at Yofit 🎉", type: 'success' });
           setSearchParams({ issuccess: 'true' });
         }
       } else {
@@ -142,93 +142,92 @@ const Event = () => {
       <div className={styles.container}>
         {/* Minimal Split Layout */}
         <main className={styles.mainLayout}>
-          {/* Left Side: Hook Heading -> Compact HD Studio Photo -> Copy */}
+          {/* Left Side: Hook Heading -> Boutique Studio Photo -> Activities -> Logistics */}
           <div className={styles.leftCol}>
-            <h1 className={styles.hookHeading}>
-              You've done the brand deals. This is what comes after.
-            </h1>
+            <div className={styles.headlineGroup}>
+              <div className={styles.eventEyebrow}>
+                HOT &amp; HUSTLE
+              </div>
 
-            {/* Generated High Definition Studio Pilates Mat Photo Card */}
+              <h1 className={styles.hookHeading}>
+                <span className={styles.hookLead}>you've done the brand deals.</span>
+                <span className={styles.hookEmphasis}>
+                  now let's <em className={styles.heatItalic}>turn up the heat.</em>
+                </span>
+              </h1>
+
+              <div className={styles.mobileLogistics}>
+                <span className={styles.logisticsPin}>📍</span>
+                <span>Yofit Studio, Gate Avenue, DIFC</span>
+                <span className={styles.logisticsDivider}>•</span>
+                <span>Sat, Sept 26 @ 7 PM</span>
+              </div>
+            </div>
+
+            {/* Generated High Definition Boutique Hot Yoga Studio Photo Card */}
             <div className={styles.imageCard}>
               <img
-                src="/Images/pilates_mat_hd.png"
-                alt="Reshaped Studio Pilates Mat"
+                src="/Images/yofit_hot_yoga.jpg"
+                alt="Yofit Studio DIFC Hot Yoga"
                 className={styles.creatorImg}
               />
               <div className={styles.imageOverlayBadge}>
-                15 SPOTS MAX
+                30 SPOTS MAX
               </div>
             </div>
 
-            {/* Host Spotlight Card */}
-            <div className={styles.hostSpotlight}>
-              <img
-                src="/Images/rashmi_pfp.png"
-                alt="Rashmi"
-                className={styles.hostAvatarImg}
-              />
-              <div className={styles.hostMeta}>
-                <h4 className={styles.hostName}>Hosted by Rashmi</h4>
-                <p className={styles.hostSubtitle}>Founder of The Form Club 111, in partnership with Creators Blueprint.</p>
-              </div>
-            </div>
-
-            {/* Colored Icons List */}
+            {/* Curated Activity List with Styled Visual Badges */}
             <ul className={styles.compactList}>
               <li className={styles.compactItem}>
-                <div className={`${styles.itemIconBadge} ${styles.iconPilates}`}>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect width="18" height="12" x="3" y="6" rx="3" />
-                    <circle cx="9" cy="12" r="2" />
-                  </svg>
+                <div className={`${styles.itemIconBadge} ${styles.iconYoga}`} aria-hidden="true">
+                  <span className={styles.itemEmoji}>🔥</span>
                 </div>
-                <span>Light pilates session to open the afternoon</span>
+                <span className={styles.itemText}>Hot yoga session to open the evening</span>
               </li>
 
               <li className={styles.compactItem}>
-                <div className={`${styles.itemIconBadge} ${styles.iconMatcha}`}>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 2v4" />
-                    <path d="M5 8h14a2 2 0 0 1 2 2v2a8 8 0 0 1-16 0v-2a2 2 0 0 1 2-2z" />
-                  </svg>
+                <div className={`${styles.itemIconBadge} ${styles.iconIce}`} aria-hidden="true">
+                  <span className={styles.itemEmoji}>🧊</span>
                 </div>
-                <span>Hands-on ceremonial matcha making & connection</span>
+                <span className={styles.itemText}>Ice bath, reset and recharge</span>
               </li>
 
               <li className={styles.compactItem}>
-                <div className={`${styles.itemIconBadge} ${styles.iconMoney}`}>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                  </svg>
+                <div className={`${styles.itemIconBadge} ${styles.iconMoney}`} aria-hidden="true">
+                  <span className={styles.itemEmoji}>💰</span>
                 </div>
-                <span>Money talk: building income beyond brand deals</span>
+                <span className={styles.itemText}>Money talk: monetizing your account</span>
               </li>
 
               <li className={styles.compactItem}>
-                <div className={`${styles.itemIconBadge} ${styles.iconGift}`}>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="3" y="8" width="18" height="12" rx="2" />
-                    <path d="M12 8v12M3 12h18M12 8H7.5a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8zM12 8h4.5a2.5 2.5 0 0 0 0-5C13 3 12 8 12 8z" />
-                  </svg>
+                <div className={`${styles.itemIconBadge} ${styles.iconMatcha}`} aria-hidden="true">
+                  <span className={styles.itemEmoji}>🍵</span>
                 </div>
-                <span>Goodies to take home</span>
+                <span className={styles.itemText}>Hella good matcha</span>
+              </li>
+
+              <li className={styles.compactItem}>
+                <div className={`${styles.itemIconBadge} ${styles.iconGift}`} aria-hidden="true">
+                  <span className={styles.itemEmoji}>🎁</span>
+                </div>
+                <span className={styles.itemText}>Goodies to take home</span>
               </li>
             </ul>
 
             <div className={styles.logisticsLine}>
-              📍 Reshaped Studio, Dubai Marina • Sat, Sept 5 @ 2 PM
+              <span className={styles.logisticsPin}>📍</span>
+              <span>Yofit Studio, Gate Avenue, DIFC</span>
+              <span className={styles.logisticsDivider}>•</span>
+              <span>Sat, Sept 26 @ 7 PM</span>
             </div>
           </div>
 
-          {/* Right Side: Flat Solid Form with Centered Header */}
+          {/* Right Side: Ticket Card with Partner Lockup & Host Bio */}
           <div className={styles.rightCol}>
             <div className={styles.formTopHeader}>
+              <div className={styles.ticketEyebrowBadge}>OFFICIAL EVENT PASS</div>
               <div className={styles.logoRow}>
-                <img
-                  src="/Images/the_form_club_wordmark.png"
-                  alt="The Form Club"
-                  className={styles.formClubWordmarkImg}
-                />
+                <span className={styles.partnerYofit}>YOFIT</span>
                 <span className={styles.partnerX}>×</span>
                 <img
                   src="/Images/CB_Logos/logo_new_black.png"
@@ -237,16 +236,31 @@ const Event = () => {
                 />
               </div>
               <p className={styles.subTagline}>
-                An intimate afternoon of movement, matcha, and money talk.
+                An evening of heat, movement, and money talk.
               </p>
             </div>
 
             <div className={styles.formHeader}>
               <div className={styles.priceGroup}>
-                <span className={styles.priceNumber}>75</span>
+                <span className={styles.priceNumber}>89</span>
                 <span className={styles.priceCurrency}>AED</span>
               </div>
-              <span className={styles.spotsBadge}>15 SPOTS MAX</span>
+              <span className={styles.spotsBadge}>30 SPOTS MAX</span>
+            </div>
+
+            {/* Host Bio Card */}
+            <div className={styles.ticketHostBio}>
+              <img
+                src="/Images/rashmi_pfp.png"
+                alt="Rashmi"
+                className={styles.ticketHostAvatar}
+              />
+              <div className={styles.ticketHostMeta}>
+                <h4 className={styles.ticketHostRole}>Instructed by Rashmi</h4>
+                <p className={styles.ticketHostSub}>
+                  Founder of The Form Club, in partnership with Creators Blueprint and Yofit
+                </p>
+              </div>
             </div>
 
             <form onSubmit={handleSubmit} className={styles.formElement} noValidate>
