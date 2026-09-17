@@ -26,7 +26,7 @@ function Nav() {
             });
         }
         setTimeout(() => {
-            window.location.href = 'https://app.creatorsblueprint.io';
+            window.location.href = 'https://cbstudio.me';
         }, 150);
     };
 
@@ -67,7 +67,7 @@ function Nav() {
                         <span className={lang === 'ar' ? styles.langActive : ''}>العربية</span>
                     </button>
 
-                    <a href="https://app.creatorsblueprint.io/login" className={styles.loginLink}>{t.nav.logIn}</a>
+                    <a href="https://cbstudio.me/login" className={styles.loginLink}>{t.nav.logIn}</a>
                     <div 
                         onClick={() => handleNavCTAClick('Desktop')} 
                         className={styles.ctaButton}
@@ -109,7 +109,7 @@ function Nav() {
                                 <span className={lang === 'ar' ? styles.langActive : ''}>العربية</span>
                             </button>
 
-                            <a href="https://app.creatorsblueprint.io/login" className={styles.mobileLoginLink}>{t.nav.logIn}</a>
+                            <a href="https://cbstudio.me/login" className={styles.mobileLoginLink}>{t.nav.logIn}</a>
                             <div 
                                 className={styles.mobileCtaButton}
                                 onClick={() => {

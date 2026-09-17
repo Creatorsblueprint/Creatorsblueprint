@@ -124,7 +124,7 @@ export default function Features() {
 
             <div className={styles.stackCtaWrapper}>
                 <a 
-                    href="https://app.creatorsblueprint.io" 
+                    href="https://cbstudio.me" 
                     className={styles.stackCtaBtn}
                     onClick={() => {
                         if (window.fbq) {

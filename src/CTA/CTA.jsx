@@ -21,7 +21,7 @@ export default function CTA() {
             });
         }
         setTimeout(() => {
-            window.location.href = "https://app.creatorsblueprint.io";
+            window.location.href = "https://cbstudio.me";
         }, 150);
     };
 
@@ -37,7 +37,7 @@ export default function CTA() {
 
                 <div className={styles.finalCtaBtnGroup}>
                     <a 
-                        href="https://app.creatorsblueprint.io" 
+                        href="https://cbstudio.me" 
                         className={styles.primaryButtonLarge}
                         onClick={handleCTAClick}
                     >

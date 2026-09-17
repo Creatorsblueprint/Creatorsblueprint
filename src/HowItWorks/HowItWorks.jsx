@@ -21,7 +21,7 @@ export default function HowItWorks() {
             });
         }
         setTimeout(() => {
-            window.location.href = "https://app.creatorsblueprint.io";
+            window.location.href = "https://cbstudio.me";
         }, 150);
     };
 
@@ -79,7 +79,7 @@ export default function HowItWorks() {
 
                 <div className={styles.howItWorksCtaBox}>
                     <span className={styles.easyNoticeLabel}>{t.howItWorks.easyLabel}</span>
-                    <a href="https://app.creatorsblueprint.io" className={styles.howItWorksCtaBtn} onClick={handleCTAClick}>
+                    <a href="https://cbstudio.me" className={styles.howItWorksCtaBtn} onClick={handleCTAClick}>
                         {t.howItWorks.cta || t.hero.cta} <i className="ri-arrow-right-line"></i>
                     </a>
                 </div>

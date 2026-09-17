@@ -23,7 +23,7 @@ export default function Pricing() {
             });
         }
         setTimeout(() => {
-            window.location.href = "https://app.creatorsblueprint.io";
+            window.location.href = "https://cbstudio.me";
         }, 150);
     };
 
@@ -72,7 +72,7 @@ export default function Pricing() {
                         <li className={styles.featureItem}><i className="ri-checkbox-circle-fill"></i> <span>Creator Store Views & Clicks</span></li>
                     </ul>
 
-                    <a href="https://app.creatorsblueprint.io" className={styles.ctaBtn} onClick={handleCTAClick}>
+                    <a href="https://cbstudio.me" className={styles.ctaBtn} onClick={handleCTAClick}>
                         {t.hero.cta} <i className="ri-arrow-right-line"></i>
                     </a>
                 </div>

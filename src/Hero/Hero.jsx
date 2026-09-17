@@ -119,7 +119,7 @@ export default function Hero() {
         }
 
         setTimeout(() => {
-            window.location.href = `https://app.creatorsblueprint.io/signup?username=${encodeURIComponent(finalHandle)}`;
+            window.location.href = `https://cbstudio.me/signup?username=${encodeURIComponent(finalHandle)}`;
         }, 150);
     };
 
@@ -179,7 +179,7 @@ export default function Hero() {
                                 </div>
                                 <span className={styles.footerDividerDot}>·</span>
                                 <a 
-                                    href="https://app.creatorsblueprint.io/login" 
+                                    href="https://cbstudio.me/login" 
                                     className={styles.signInLink}
                                 >
                                     <span className={styles.signInPrompt}>{t.hero.signInPrompt || 'Already have an account?'}</span>{' '}
