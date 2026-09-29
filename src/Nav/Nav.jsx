@@ -58,6 +58,7 @@ function Nav() {
                     <span className={styles.linkItem} onClick={() => handleScrollTo('spotlight')}>{t.nav.creatorStories}</span>
                     <span className={styles.linkItem} onClick={() => handleScrollTo('features')}>{t.nav.features}</span>
                     <span className={styles.linkItem} onClick={() => handleScrollTo('how-it-works')}>{t.nav.howItWorks}</span>
+                    <span className={styles.linkItem} onClick={() => handleScrollTo('pricing')}>{t.nav.pricing}</span>
                 </div>
                 
                 <div className={styles.navActionRight}>
@@ -102,6 +103,7 @@ function Nav() {
                             <span className={styles.mobileLink} onClick={() => handleScrollTo('spotlight')}>{t.nav.creatorStories}</span>
                             <span className={styles.mobileLink} onClick={() => handleScrollTo('features')}>{t.nav.features}</span>
                             <span className={styles.mobileLink} onClick={() => handleScrollTo('how-it-works')}>{t.nav.howItWorks}</span>
+                            <span className={styles.mobileLink} onClick={() => handleScrollTo('pricing')}>{t.nav.pricing}</span>
                             
                             <button className={styles.mobileLangToggleBtn} onClick={toggleLanguage}>
                                 <span className={lang === 'en' ? styles.langActive : ''}>EN</span>

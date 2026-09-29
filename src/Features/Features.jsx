@@ -59,11 +59,11 @@ export default function Features() {
     const { t } = useLanguage();
 
     const receiptTools = [
-        { key: 'linktree', name: 'Linktree Pro', cost: '$15/mo', logoUrl: 'https://cdn.simpleicons.org/linktree/43E660' },
-        { key: 'canva', name: 'Canva Pro', cost: '$13/mo', logoUrl: 'https://cdn.simpleicons.org/canva/00C4CC' },
-        { key: 'calendly', name: 'Calendly Pro', cost: '$16/mo', logoUrl: 'https://cdn.simpleicons.org/calendly/006BFF' },
-        { key: 'mailchimp', name: 'Mailchimp', cost: '$20/mo', logoUrl: 'https://cdn.simpleicons.org/mailchimp/D97706' },
-        { key: 'teachable', name: 'Teachable', cost: '$39/mo', logoUrl: 'https://cdn.simpleicons.org/teachable/FF5A5F' },
+        { key: 'linktree', name: 'Linktree Pro', cost: '55 AED/mo', logoUrl: 'https://cdn.simpleicons.org/linktree/43E660' },
+        { key: 'canva', name: 'Canva Pro', cost: '48 AED/mo', logoUrl: 'https://cdn.simpleicons.org/canva/00C4CC' },
+        { key: 'calendly', name: 'Calendly Pro', cost: '59 AED/mo', logoUrl: 'https://cdn.simpleicons.org/calendly/006BFF' },
+        { key: 'mailchimp', name: 'Mailchimp', cost: '73 AED/mo', logoUrl: 'https://cdn.simpleicons.org/mailchimp/D97706' },
+        { key: 'teachable', name: 'Teachable', cost: '145 AED/mo', logoUrl: 'https://cdn.simpleicons.org/teachable/FF5A5F' },
     ];
 
     return (
@@ -114,7 +114,7 @@ export default function Features() {
                                 <span className={styles.cbFamilyTitle}>{t.features.cbFamily || 'Join Creators Blueprint Family 🤩'}</span>
                             </div>
                             <div className={styles.cbPriceBadge}>
-                                <span className={styles.cbPriceAmount}>$27 / mo</span>
+                                <span className={styles.cbPriceAmount}>99 AED / mo</span>
                             </div>
                         </div>
                     </div>
